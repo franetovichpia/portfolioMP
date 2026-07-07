@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Colores principales */
+    --background: 38 33% 97%;
+    --foreground: 35 12% 14%;
+
+    --card: 42 30% 99%;
+    --card-foreground: 35 12% 14%;
+
+    /* Verde oliva */
+    --primary: 78 18% 39%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Beige */
+    --secondary: 38 28% 93%;
+    --secondary-foreground: 35 12% 14%;
+
+    --muted: 38 22% 94%;
+    --muted-foreground: 30 8% 42%;
+
+    --accent: 42 25% 90%;
+    --accent-foreground: 35 12% 14%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 18% 87%;
+    --input: 35 18% 87%;
+    --ring: 78 18% 39%;
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 35 10% 8%;
+    --foreground: 40 15% 95%;
+
+    --card: 35 10% 11%;
+    --card-foreground: 40 15% 95%;
+
+    --primary: 78 18% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 35 10% 16%;
+    --secondary-foreground: 40 15% 95%;
+
+    --muted: 35 10% 15%;
+    --muted-foreground: 35 8% 68%;
+
+    --accent: 35 10% 16%;
+    --accent-foreground: 40 15% 95%;
+
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 8% 20%;
+    --input: 35 8% 20%;
+    --ring: 78 18% 52%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: #70765a;
+    color: white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f5f2ec;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #c7bfaf;
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a99e8a;
+  }
+}
