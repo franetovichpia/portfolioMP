@@ -22,6 +22,7 @@ export const projects: Project[] = [
     role: "Diseño UI y desarrollo Full Stack",
     featured: true,
   },
+
   {
     id: "arqstudio",
     slug: "arqstudio",
@@ -42,6 +43,7 @@ export const projects: Project[] = [
     role: "Diseño UI y desarrollo Frontend",
     featured: true,
   },
+
   {
     id: "pipi-balloons",
     slug: "pipi-balloons",
@@ -65,16 +67,15 @@ export const projects: Project[] = [
     role: "Diseño y desarrollo web",
     featured: true,
   },
+
   {
-    title: "La Piccola",
+    id: "la-piccola",
     slug: "la-piccola",
-    category: "App Mobile",
-    status: "Finalizado",
-    year: "2026",
+    title: "La Piccola",
+    shortDescription:
+      "Aplicación móvil para la gestión integral de restaurantes.",
     description:
-      "Aplicación móvil de gestión integral para restaurante, desarrollada con Ionic y Angular. Permite administrar clientes, mesas, pedidos, cocina, bar, mozos, pagos, facturación, juegos con descuentos, encuestas, reportes y notificaciones.",
-    longDescription:
-      "La Piccola es una app mobile orientada a la gestión completa de un restaurante. Incluye distintos perfiles de usuario como dueño, supervisor, metre, mozo, cocinero, cantinero, cliente registrado y cliente anónimo. El sistema permite gestionar altas, aprobación de clientes, QR de ingreso y mesas, menú, carrito, chat con mozo, pedidos por sector, cuenta, propinas, factura PDF por email y reportes.",
+      "Aplicación desarrollada con Ionic y Angular para administrar clientes, mesas, pedidos, cocina, bar, pagos, reportes y notificaciones push.",
     technologies: [
       "Ionic",
       "Angular",
@@ -84,24 +85,7 @@ export const projects: Project[] = [
       "Push Notifications",
       "QR Scanner",
       "Camera",
-      "EmailJS",
-      "PDF",
-      "Git",
-      "GitHub"],
-    role:
-      "Desarrollo mobile y funcionalidades principales: alta de empleados, platos, bebidas y mesas; registro y aprobación de clientes; ingreso anónimo; asignación de mesa; menú, carrito de compras, chat con mozo, autenticación, Supabase y servicios móviles.",
-    features: [
-      "Gestión de empleados, clientes, platos, bebidas y mesas",
-      "Ingreso de clientes registrados y anónimos mediante QR",
-      "Asignación de mesas por metre",
-      "Menú digital con carrito de compras",
-      "Chat en vivo entre cliente y mozo",
-      "Gestión de pedidos por cocina y bar",
-      "Juegos con descuentos para clientes registrados",
-      "Encuestas de satisfacción y reportes",
-      "Confirmación de pago, liberación de mesa y factura PDF por email",
-      "Notificaciones push, sonidos y vibración"],
-    image: "/projects/la-piccola/cover.png",
+    ],
     images: [
       "/projects/la-piccola/inicio-registro1.png",
       "/projects/la-piccola/ingreso.jpeg",
@@ -109,25 +93,61 @@ export const projects: Project[] = [
       "/projects/la-piccola/mail.jpeg",
       "/projects/la-piccola/reportes.jpeg",
       "/projects/la-piccola/panel-dueño.jpeg",
-      "/projects/la-piccola/branding.png"],
-    githubUrl: "https://github.com/julian-deca/grupo1-2026",
-    demoUrl: "",
-    type: "mobile"
+      "/projects/la-piccola/branding.png",
+    ],
+    github: "https://github.com/julian-deca/grupo1-2026",
+    category: "Mobile",
+    year: 2026,
+    role: "Desarrollo mobile con Ionic, Angular y Supabase.",
+    featured: true,
   },
+
+  {
+    id: "gestoria-automotor",
+    slug: "gestoria-automotor",
+    title: "Gestoría Automotor",
+    shortDescription:
+      "Landing page profesional para una mandataria automotor.",
+    description:
+      "Landing desarrollada en Next.js con diseño minimalista y elegante, orientada a captar consultas para servicios de gestoría automotor. Incluye secciones de servicios, proceso de trabajo, preguntas frecuentes, contacto y una identidad visual propia.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Vercel",
+    ],
+    images: [
+      "/projects/gestoria-automotor/home.png",
+      "/projects/gestoria-automotor/services.png",
+      "/projects/gestoria-automotor/contact.png",
+    ],
+    github: "https://github.com/franetovichpia/gestoria",
+    category: "Frontend",
+    year: 2026,
+    role: "Diseño UI/UX y desarrollo Frontend.",
+    featured: true,
+  },
+
   {
     id: "red-social",
     slug: "red-social",
     title: "Red Social Full Stack",
     shortDescription:
-      "Red social con autenticación, publicaciones, panel admin y multimedia.",
+      "Red social con autenticación, publicaciones y panel administrativo.",
     description:
-      "Aplicación full stack desarrollada con arquitectura frontend y backend, autenticación JWT, gestión de publicaciones, roles de usuario y carga de archivos multimedia.",
-    technologies: ["Angular", "NestJS", "MongoDB", "JWT", "Cloudinary"],
+      "Aplicación full stack desarrollada con Angular y NestJS. Incluye autenticación JWT, publicaciones multimedia, roles de usuario, panel de administración y almacenamiento de imágenes en Cloudinary.",
+    technologies: [
+      "Angular",
+      "NestJS",
+      "MongoDB",
+      "JWT",
+      "Cloudinary",
+    ],
     github:
       "https://github.com/franetovichpia/Pia-Franetovich-TP2-PROG4-2026-C1",
     category: "Full Stack",
     year: 2026,
-    role: "Arquitectura y desarrollo Full Stack",
+    role: "Arquitectura y desarrollo Full Stack.",
     featured: true,
   },
 ];
