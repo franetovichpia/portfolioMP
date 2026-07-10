@@ -1,6 +1,6 @@
 export const SITE_CONFIG = {
-  name: "Nombre Agencia",
-  shortName: "Agencia",
+  name: "Portfolio",
+  shortName: "Portfolio",
   description:
     "Agencia digital especializada en diseño y desarrollo de productos web.",
   url: "https://www.example.com",
