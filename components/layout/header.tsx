@@ -8,11 +8,11 @@ import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/data/site";
 
 const navigation = [
-  { name: "Inicio", href: "#" },
   { name: "Sobre mí", href: "#about" },
-  { name: "Servicios", href: "#services" },
-  { name: "Proyectos", href: "#projects" },
   { name: "Experiencia", href: "#experience" },
+  { name: "Skills", href: "#skills" },
+  { name: "Recorrido", href: "#timeline" },
+  { name: "Proyectos", href: "#projects" },
   { name: "Contacto", href: "#contact" },
 ];
 
@@ -28,7 +28,7 @@ export function Header() {
             {siteConfig.name}
           </Link>
 
-          <nav className="hidden items-center gap-8 lg:flex">
+          <nav className="hidden items-center gap-5 xl:flex">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -43,14 +43,15 @@ export function Header() {
           <div className="flex items-center gap-3">
             <ThemeToggle />
 
-            <Button className="hidden lg:inline-flex">
-              Hablemos
+            <Button asChild className="hidden lg:inline-flex">
+              <Link href="#contact">Hablemos</Link>
             </Button>
 
             <Button
               variant="ghost"
               size="icon"
-              className="lg:hidden"
+              className="xl:hidden"
+              aria-label="Abrir menú"
             >
               <Menu className="h-5 w-5" />
             </Button>
